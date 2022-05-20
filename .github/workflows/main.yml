@@ -20,7 +20,7 @@ jobs:
     name: Finding Branch
     runs-on: ubuntu-latest
     steps:
-        - run: echo ${{ github.event.repository.default_branch }}
+        - run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
 
 
      
