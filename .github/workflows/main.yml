@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@main
-        - run: echo "${{ github.event.repository.default_branch }}"
+        - run: echo ${{ github.event.repository.default_branch }}
 
 
      
